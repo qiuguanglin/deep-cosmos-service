@@ -7,6 +7,7 @@ const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const UserRouter = require('./router/User');
+const PromotionRouter = require('./router/Promotion');
 
 const CORS_OPT = {
   origin: 'http://localhost:8080',
@@ -33,4 +34,5 @@ App
   .use(cookieParser())
   .use(session(SESSION_OPT))
   .use('/user', UserRouter)
+  .use('/promotion', PromotionRouter)
   .listen(60000, console.log('server stated'));
