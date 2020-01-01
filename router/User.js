@@ -11,8 +11,11 @@ router.post('/newUser', (req, res) => {
   const {username, password} = req.body;
   req.session.user = {username, password};
   res.send({success: true, message: 'account created'});
+});
 
-  // res.send({success: false, message: '用户名已经存在'});
+router.post('/login', (req, res) => {
+    const {username, password} = req.body;
+    res.send({success: true, message: 'login succeeded'});
 });
 
 router.get('/amIin', (req, res) => {
