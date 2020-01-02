@@ -6,16 +6,22 @@ const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
+const Config = require('./Config');
+const RedisClient = require('redis').createClient(Config.Redis);
+const RedisStore = require('connect-redis')(session);
 const UserRouter = require('./router/User');
 const PromotionRouter = require('./router/Promotion');
 
 const CORS_OPT = {
-  origin: 'http://localhost:8080',
+  origin: Config.Cors.asURL,
   maxAge: 1200,
   credentials: true
 }
 
 const SESSION_OPT = {
+  store: new RedisStore({
+    client: RedisClient
+  }),
   key: 'user_sid',
   secret: '-@-3ban5%na*=',
   resave: false,
