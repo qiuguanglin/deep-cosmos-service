@@ -1,0 +1,92 @@
+[
+  {
+    "from": "moon",
+    "to": [
+      {"name": "earth", "price": 2},
+      {"name": "mars", "price": 3}
+    ]
+  },
+  {
+    "from": "mars",
+    "to": [
+      {"name": "earth", "price": 5},
+      {"name": "moon", "price": 3},
+      {"name": "venus", "price": 1},
+      {"name": "jupiter", "price": 5}
+    ]
+  },
+  {
+    "from": "venus",
+    "to": [
+      {"name": "mars", "price": 1},
+      {"name": "earth", "price": 3},
+      {"name": "mercury", "price": 1}
+    ]
+  },
+  {
+    "from": "mercury",
+    "to": [
+      {"name": "venus", "price": 1},
+      {"name": "earth", "price": 4}
+    ]
+  },
+  {
+    "from": "earth",
+    "to": [
+      {"name": "moon", "price": 2},
+      {"name": "mars", "price": 5},
+      {"name": "venus", "price": 3},
+      {"name": "mercury", "price": 4}
+    ]
+  },
+  {
+    "from": "jupiter",
+    "to": [
+      {"name": "saturn", "price": 8},
+      {"name": "mars", "price": 5}
+    ]
+  },
+  {
+    "from": "titan",
+    "to": [
+      {"name": "saturn", "price": 1}
+    ]
+  },
+  {
+    "from": "saturn",
+    "to": [
+      {"name": "jupiter", "price": 8},
+      {"name": "mimas", "price": 2},
+      {"name": "titan", "price": 1}
+    ]
+  },
+  {
+    "from": "mimas",
+    "to": [
+      {"name": "saturn", "price": 2},
+      {"name": "pluto", "price": 7},
+      {"name": "neptune", "price": 4},
+      {"name": "uranus", "price": 3}
+    ]
+  },
+  {
+    "from": "uranus",
+    "to": [
+      {"name": "neptune", "price": 1},
+      {"name": "mimas", "price": 3}
+    ]
+  },
+  {
+    "from": "neptune",
+    "to": [
+      {"name": "uranus", "price": 1},
+      {"name": "mimas", "price": 4}
+    ]
+  },
+  {
+    "from": "pluto",
+    "to": [
+      {"name": "mimas", "price": 7}
+    ]
+  }
+]

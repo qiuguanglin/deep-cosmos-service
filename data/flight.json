@@ -1,0 +1,44 @@
+[
+  {
+    "id": 1,
+    "name": "Phoenix",
+    "cname": "火凤凰号",
+    "capacity": 80,
+    "discount": 0.85
+  },
+  {
+    "id": 2,
+    "name": "Thor",
+    "cname": "雷神号",
+    "capacity": 60,
+    "discount": 0.95
+  },
+  {
+    "id": 3,
+    "name": "Prometheus",
+    "cname": "普罗米修斯",
+    "capacity": 90,
+    "discount": 0.9
+  },
+  {
+    "id": 4,
+    "name": "Marcher",
+    "cname": "进发号",
+    "capacity": 50,
+    "discount": 0.5
+  },
+  {
+    "id": 5,
+    "name": "RoaringDragon",
+    "cname": "飞龙号",
+    "capacity": 20,
+    "discount": 0.6
+  },
+  {
+    "id": 6,
+    "name": "Rover",
+    "cname": "漫游者",
+    "capacity": 20,
+    "discount": 0.6
+  }
+]

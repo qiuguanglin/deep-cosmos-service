@@ -1,0 +1,50 @@
+[
+  {
+    "name": "earth",
+    "cname": "地球"
+  },
+  {
+    "name": "moon",
+    "cname": "月球"
+  },
+  {
+    "name": "venus",
+    "cname": "金星"
+  },
+  {
+    "name": "mercury",
+    "cname": "水星"
+  },
+  {
+    "name": "mars",
+    "cname": "火星"
+  },
+  {
+    "name": "jupiter",
+    "cname": "木星"
+  },
+  {
+    "name": "saturn",
+    "cname": "土星"
+  },
+  {
+    "name": "uranus",
+    "cname": "天王星"
+  },
+  {
+    "name": "neptune",
+    "cname": "海王星"
+  },
+  {
+    "name": "pluto",
+    "cname": "冥王星"
+  },
+  {
+    "name": "mimas",
+    "cname": "土卫一"
+  },
+  {
+    "name": "titan",
+    "cname": "土卫六（泰坦）"
+  }
+]

@@ -1,0 +1,50 @@
+[
+  {
+    "stop": "moon",
+    "shuttles": [1]
+  },
+  {
+    "stop": "earth",
+    "shuttles": [1]
+  },
+  {
+    "stop": "venus",
+    "shuttles": [1]
+  },
+  {
+    "stop": "mercury",
+    "shuttles": [1]
+  },
+  {
+    "stop": "mars",
+    "shuttles": [1, 2]
+  },
+  {
+    "stop": "jupiter",
+    "shuttles": [2]
+  },
+  {
+    "stop": "saturn",
+    "shuttles": [2, 3]
+  },
+  {
+    "stop": "uranus",
+    "shuttles": [4]
+  },
+  {
+    "stop": "neptune",
+    "shuttles": [4]
+  },
+  {
+    "stop": "pluto",
+    "shuttles": [5]
+  },
+  {
+    "stop": "titan",
+    "shuttles": [3]
+  },
+  {
+    "stop": "mimas",
+    "shuttles": [2, 4, 5]
+  }
+]
