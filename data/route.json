@@ -1,92 +1,92 @@
 [
   {
-    "from": "moon",
+    "from": "002",
     "to": [
-      {"name": "earth", "price": 2},
-      {"name": "mars", "price": 3}
+      {"name": "001", "weight": 2},
+      {"name": "005", "weight": 3}
     ]
   },
   {
-    "from": "mars",
+    "from": "005",
     "to": [
-      {"name": "earth", "price": 5},
-      {"name": "moon", "price": 3},
-      {"name": "venus", "price": 1},
-      {"name": "jupiter", "price": 5}
+      {"name": "001", "weight": 5},
+      {"name": "002", "weight": 3},
+      {"name": "003", "weight": 1},
+      {"name": "006", "weight": 5}
     ]
   },
   {
-    "from": "venus",
+    "from": "003",
     "to": [
-      {"name": "mars", "price": 1},
-      {"name": "earth", "price": 3},
-      {"name": "mercury", "price": 1}
+      {"name": "005", "weight": 1},
+      {"name": "001", "weight": 3},
+      {"name": "004", "weight": 1}
     ]
   },
   {
-    "from": "mercury",
+    "from": "004",
     "to": [
-      {"name": "venus", "price": 1},
-      {"name": "earth", "price": 4}
+      {"name": "003", "weight": 1},
+      {"name": "001", "weight": 4}
     ]
   },
   {
-    "from": "earth",
+    "from": "001",
     "to": [
-      {"name": "moon", "price": 2},
-      {"name": "mars", "price": 5},
-      {"name": "venus", "price": 3},
-      {"name": "mercury", "price": 4}
+      {"name": "002", "weight": 2},
+      {"name": "005", "weight": 5},
+      {"name": "003", "weight": 3},
+      {"name": "004", "weight": 4}
     ]
   },
   {
-    "from": "jupiter",
+    "from": "006",
     "to": [
-      {"name": "saturn", "price": 8},
-      {"name": "mars", "price": 5}
+      {"name": "007", "weight": 8},
+      {"name": "005", "weight": 5}
     ]
   },
   {
-    "from": "titan",
+    "from": "012",
     "to": [
-      {"name": "saturn", "price": 1}
+      {"name": "007", "weight": 1}
     ]
   },
   {
-    "from": "saturn",
+    "from": "007",
     "to": [
-      {"name": "jupiter", "price": 8},
-      {"name": "mimas", "price": 2},
-      {"name": "titan", "price": 1}
+      {"name": "006", "weight": 8},
+      {"name": "011", "weight": 2},
+      {"name": "012", "weight": 1}
     ]
   },
   {
-    "from": "mimas",
+    "from": "011",
     "to": [
-      {"name": "saturn", "price": 2},
-      {"name": "pluto", "price": 7},
-      {"name": "neptune", "price": 4},
-      {"name": "uranus", "price": 3}
+      {"name": "007", "weight": 2},
+      {"name": "010", "weight": 7},
+      {"name": "009", "weight": 4},
+      {"name": "008", "weight": 3}
     ]
   },
   {
-    "from": "uranus",
+    "from": "008",
     "to": [
-      {"name": "neptune", "price": 1},
-      {"name": "mimas", "price": 3}
+      {"name": "009", "weight": 1},
+      {"name": "011", "weight": 3}
     ]
   },
   {
-    "from": "neptune",
+    "from": "009",
     "to": [
-      {"name": "uranus", "price": 1},
-      {"name": "mimas", "price": 4}
+      {"name": "008", "weight": 1},
+      {"name": "011", "weight": 4}
     ]
   },
   {
-    "from": "pluto",
+    "from": "010",
     "to": [
-      {"name": "mimas", "price": 7}
+      {"name": "011", "weight": 7}
     ]
   }
 ]

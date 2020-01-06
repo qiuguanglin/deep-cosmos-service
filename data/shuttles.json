@@ -1,50 +1,50 @@
 [
   {
-    "stop": "moon",
+    "stop": "002",
     "shuttles": [1]
   },
   {
-    "stop": "earth",
+    "stop": "001",
     "shuttles": [1]
   },
   {
-    "stop": "venus",
+    "stop": "003",
     "shuttles": [1]
   },
   {
-    "stop": "mercury",
+    "stop": "004",
     "shuttles": [1]
   },
   {
-    "stop": "mars",
+    "stop": "005",
     "shuttles": [1, 2]
   },
   {
-    "stop": "jupiter",
+    "stop": "006",
     "shuttles": [2]
   },
   {
-    "stop": "saturn",
+    "stop": "007",
     "shuttles": [2, 3]
   },
   {
-    "stop": "uranus",
+    "stop": "008",
     "shuttles": [4]
   },
   {
-    "stop": "neptune",
+    "stop": "009",
     "shuttles": [4]
   },
   {
-    "stop": "pluto",
+    "stop": "010",
     "shuttles": [5]
   },
   {
-    "stop": "titan",
+    "stop": "012",
     "shuttles": [3]
   },
   {
-    "stop": "mimas",
+    "stop": "011",
     "shuttles": [2, 4, 5]
   }
 ]

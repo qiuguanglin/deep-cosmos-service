@@ -4,41 +4,55 @@
     "name": "Phoenix",
     "cname": "火凤凰号",
     "capacity": 80,
-    "discount": 0.85
+    "discount": 0.85,
+    "fare": 10000000
   },
   {
     "id": 2,
     "name": "Thor",
     "cname": "雷神号",
     "capacity": 60,
-    "discount": 0.95
+    "discount": 0.95,
+    "fare": 10005000
   },
   {
     "id": 3,
     "name": "Prometheus",
     "cname": "普罗米修斯",
     "capacity": 90,
-    "discount": 0.9
+    "discount": 0.9,
+    "fare": 20045000
   },
   {
     "id": 4,
     "name": "Marcher",
     "cname": "进发号",
     "capacity": 50,
-    "discount": 0.5
+    "discount": 0.5,
+    "fare": 9999999
   },
   {
     "id": 5,
     "name": "RoaringDragon",
     "cname": "飞龙号",
     "capacity": 20,
-    "discount": 0.6
+    "discount": 0.6,
+    "fare": 880000
   },
   {
     "id": 6,
     "name": "Rover",
     "cname": "漫游者",
     "capacity": 20,
-    "discount": 0.6
+    "discount": 0.6,
+    "fare": 32300000
+  },
+  {
+    "id": 7,
+    "name": "Curiosity",
+    "cname": "好奇号",
+    "capacity": 20,
+    "discount": 0.6,
+    "fare": 50000000
   }
 ]
