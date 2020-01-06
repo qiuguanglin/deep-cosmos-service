@@ -8,7 +8,7 @@ router.get('/promotionList', (req, res) => {
     price: 4000
   };
 
-  res.send({success: true, promotions: [fakeData, fakeData, fakeData]});
+  res.send({success: true, message: [fakeData, fakeData, fakeData]});
 });
 
 module.exports = router;

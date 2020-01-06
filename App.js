@@ -12,6 +12,7 @@ const RedisStore = require('connect-redis')(session);
 const UserRouter = require('./router/User');
 const PromotionRouter = require('./router/Promotion');
 const SearchRouter = require('./router/Search');
+const DataRouter = require('./router/Data');
 
 const CORS_OPT = {
   origin: Config.Cors.asURL,
@@ -43,4 +44,5 @@ App
   .use('/user', UserRouter)
   .use('/promotion', PromotionRouter)
   .use('/search', SearchRouter)
+  .use('/data', DataRouter)
   .listen(60000, console.log('server stated'));
