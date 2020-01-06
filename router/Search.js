@@ -10,13 +10,8 @@ router.get('/flights/:from/:to', (req, res) => {
     return res.send({success: false, message: 'start and destination cannot be identical'});
   }
 
-  const [planetFrom, planetTo] = [PlanetEnum[from], PlanetEnum[to]];
-  if(!planetFrom || !planetTo){
-    return res.send({success: false, message: 'no results found'});
-  }
-
-  console.log('sarching for', planetFrom, planetTo);
-  const flights = RouteSearchEngine(planetFrom, planetTo);
+  console.log('sarching for', from, to);
+  const flights = RouteSearchEngine(from, to);
   res.send({success: true, message: flights});
 });
 
