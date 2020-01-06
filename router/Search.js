@@ -8,8 +8,9 @@ router.get('/flights/:from/:to', (req, res) => {
   let {from, to} = req.params;
   const [planetFrom, planetTo] = [PlanetEnum[from], PlanetEnum[to]];
   if(!planetFrom || !planetTo)
-    res.send({success: false, flights: 'no results found'});
+    return res.send({success: false, flights: 'no results found'});
 
+  console.log('sarching for', planetFrom, planetTo);
   const flights = RouteSearchEngine(planetFrom, planetTo);
   res.send({success: true, flights});
 });
