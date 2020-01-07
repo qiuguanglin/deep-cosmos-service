@@ -5,7 +5,8 @@
     "cname": "火凤凰号",
     "capacity": 80,
     "discount": 0.85,
-    "fare": 10000000
+    "fare": 10000000,
+    "speed": 100
   },
   {
     "id": 2,
@@ -13,7 +14,8 @@
     "cname": "雷神号",
     "capacity": 60,
     "discount": 0.95,
-    "fare": 10005000
+    "fare": 10005000,
+    "speed": 100
   },
   {
     "id": 3,
@@ -21,7 +23,8 @@
     "cname": "普罗米修斯",
     "capacity": 90,
     "discount": 0.9,
-    "fare": 20045000
+    "fare": 20045000,
+    "speed": 100
   },
   {
     "id": 4,
@@ -29,7 +32,8 @@
     "cname": "进发号",
     "capacity": 50,
     "discount": 0.5,
-    "fare": 9999999
+    "fare": 9999999,
+    "speed": 100
   },
   {
     "id": 5,
@@ -37,7 +41,8 @@
     "cname": "飞龙号",
     "capacity": 20,
     "discount": 0.6,
-    "fare": 880000
+    "fare": 880000,
+    "speed": 100
   },
   {
     "id": 6,
@@ -45,7 +50,8 @@
     "cname": "漫游者",
     "capacity": 20,
     "discount": 0.6,
-    "fare": 32300000
+    "fare": 32300000,
+    "speed": 100
   },
   {
     "id": 7,
@@ -53,6 +59,7 @@
     "cname": "好奇号",
     "capacity": 20,
     "discount": 0.6,
-    "fare": 50000000
+    "fare": 50000000,
+    "speed": 100
   }
 ]

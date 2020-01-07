@@ -2,91 +2,91 @@
   {
     "from": "002",
     "to": [
-      {"name": "001", "weight": 2},
-      {"name": "005", "weight": 3}
+      {"name": "001", "weight": 2, "distance": 100},
+      {"name": "005", "weight": 3, "distance": 100}
     ]
   },
   {
     "from": "005",
     "to": [
-      {"name": "001", "weight": 5},
-      {"name": "002", "weight": 3},
-      {"name": "003", "weight": 1},
-      {"name": "006", "weight": 5}
+      {"name": "001", "weight": 5, "distance": 100},
+      {"name": "002", "weight": 3, "distance": 100},
+      {"name": "003", "weight": 1, "distance": 100},
+      {"name": "006", "weight": 5, "distance": 100}
     ]
   },
   {
     "from": "003",
     "to": [
-      {"name": "005", "weight": 1},
-      {"name": "001", "weight": 3},
-      {"name": "004", "weight": 1}
+      {"name": "005", "weight": 1, "distance": 100},
+      {"name": "001", "weight": 3, "distance": 100},
+      {"name": "004", "weight": 1, "distance": 100}
     ]
   },
   {
     "from": "004",
     "to": [
-      {"name": "003", "weight": 1},
-      {"name": "001", "weight": 4}
+      {"name": "003", "weight": 1, "distance": 100},
+      {"name": "001", "weight": 4, "distance": 100}
     ]
   },
   {
     "from": "001",
     "to": [
-      {"name": "002", "weight": 2},
-      {"name": "005", "weight": 5},
-      {"name": "003", "weight": 3},
-      {"name": "004", "weight": 4}
+      {"name": "002", "weight": 2, "distance": 100},
+      {"name": "005", "weight": 5, "distance": 100},
+      {"name": "003", "weight": 3, "distance": 100},
+      {"name": "004", "weight": 4, "distance": 100}
     ]
   },
   {
     "from": "006",
     "to": [
-      {"name": "007", "weight": 8},
-      {"name": "005", "weight": 5}
+      {"name": "007", "weight": 8, "distance": 100},
+      {"name": "005", "weight": 5, "distance": 100}
     ]
   },
   {
     "from": "012",
     "to": [
-      {"name": "007", "weight": 1}
+      {"name": "007", "weight": 1, "distance": 100}
     ]
   },
   {
     "from": "007",
     "to": [
-      {"name": "006", "weight": 8},
-      {"name": "011", "weight": 2},
-      {"name": "012", "weight": 1}
+      {"name": "006", "weight": 8, "distance": 100},
+      {"name": "011", "weight": 2, "distance": 100},
+      {"name": "012", "weight": 1, "distance": 100}
     ]
   },
   {
     "from": "011",
     "to": [
-      {"name": "007", "weight": 2},
-      {"name": "010", "weight": 7},
-      {"name": "009", "weight": 4},
-      {"name": "008", "weight": 3}
+      {"name": "007", "weight": 2, "distance": 100},
+      {"name": "010", "weight": 7, "distance": 100},
+      {"name": "009", "weight": 4, "distance": 100},
+      {"name": "008", "weight": 3, "distance": 100}
     ]
   },
   {
     "from": "008",
     "to": [
-      {"name": "009", "weight": 1},
-      {"name": "011", "weight": 3}
+      {"name": "009", "weight": 1, "distance": 100},
+      {"name": "011", "weight": 3, "distance": 100}
     ]
   },
   {
     "from": "009",
     "to": [
-      {"name": "008", "weight": 1},
-      {"name": "011", "weight": 4}
+      {"name": "008", "weight": 1, "distance": 100},
+      {"name": "011", "weight": 4, "distance": 100}
     ]
   },
   {
     "from": "010",
     "to": [
-      {"name": "011", "weight": 7}
+      {"name": "011", "weight": 7, "distance": 100}
     ]
   }
 ]
