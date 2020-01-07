@@ -10,6 +10,10 @@ router.get('/flights/:from/:to', (req, res) => {
     return res.send({success: false, message: 'start and destination cannot be identical'});
   }
 
+  if(isNaN(from) || isNaN(to)){
+    return res.send({success: false, message: 'only the number(such as 001 or 101) if places are accepted'});
+  }
+
   console.log('sarching for', from, to);
   const flights = RouteSearchEngine(from, to);
   res.send({success: true, message: flights});
