@@ -13,7 +13,6 @@ const UserRouter = require('./router/User');
 const PromotionRouter = require('./router/Promotion');
 const SearchRouter = require('./router/Search');
 const DataRouter = require('./router/Data');
-// const Repo = require('./repo/Repo');
 
 const CORS_OPT = {
   origin: Config.Cors.asURL,
