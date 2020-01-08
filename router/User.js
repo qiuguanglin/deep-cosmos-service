@@ -36,7 +36,7 @@ router.post('/login', (req, res) => {
           return res.send({success: true, message: req.session.user});
         }
       }
-      res.send({success: false, message: 'login failed'});
+      res.send({success: false});
     });
 });
 
@@ -48,7 +48,7 @@ router.get('/amIin', (req, res) => {
 router.delete('/signout', (req, res) => {
   if(req.session.user){
     res.clearCookie('user_sid');
-    res.send({success: true, message: 'signed out'});
+    res.send({success: true});
   }
 });
 
