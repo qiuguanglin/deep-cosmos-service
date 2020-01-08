@@ -9,5 +9,8 @@ module.exports = {
     host: 'http://localhost',
     port: 8080,
     get asURL() {return this.host + ':' + this.port}
+  },
+  DB: {
+    name: 'db.deepcosmos'
   }
 }
