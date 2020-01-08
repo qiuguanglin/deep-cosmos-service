@@ -12,19 +12,18 @@ router.post('/newUser', (req, res) => {
   //first chceck session
   const {user_sid} = req.cookies;
   if(user_sid && req.session.user){
-    return res.send({success: true, message: 'logged in'});
+    const sessionUser = req.session.user;
+    return res.send({success: true, message: sessionUser});
   }
 
   const {username, pass, nickname} = req.body;
   NewUser({username, pass, nickname}, (err, user)=>{
-    if(err){
-      console.log(err); //this happens mostly due to the username has existed
-      return res.send({success: false, message: 'creating user error'});
-    }
+    if(err)
+      return res.send({success: false, message: err.errno});
 
     //create user and stuff into session
     req.session.user = user;
-    res.send({success: true, message: row.NICKNAME || row.USERNAME});
+    res.send({success: true, message: user});
   });
 });
 
@@ -34,7 +33,7 @@ router.post('/login', (req, res) => {
       if(row){
         if(row.PASS === md5(pass)){
           req.session.user = {username: row.USERNAME, nickname: row.NICKNAME};
-          return res.send({success: true, message: row.NICKNAME || row.USERNAME});
+          return res.send({success: true, message: req.session.user});
         }
       }
       res.send({success: false, message: 'login failed'});
@@ -42,7 +41,8 @@ router.post('/login', (req, res) => {
 });
 
 router.get('/amIin', (req, res) => {
-  res.send({success: !!req.session.user});
+  const user = req.session.user;
+  res.send({success: !!user, message: user});
 });
 
 router.delete('/signout', (req, res) => {
