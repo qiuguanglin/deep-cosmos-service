@@ -1,16 +1,32 @@
 'use strict';
 
 module.exports = {
-  Redis: {
-    host: '49.235.159.64',
-    port: 6379
+  dev: {
+    Redis: {
+      host: '49.235.159.64',
+      port: 6379
+    },
+    Cors: {
+      host: 'http://localhost',
+      port: 8080,
+      get asURL() {return this.host + ':' + this.port}
+    },
+    DB: {
+      name: 'db.deepcosmos'
+    }
   },
-  Cors: {
-    host: 'http://localhost',
-    port: 8080,
-    get asURL() {return this.host + ':' + this.port}
-  },
-  DB: {
-    name: 'db.deepcosmos'
+  prd: {
+    Redis: {
+      host: 'localhost',
+      port: 6379
+    },
+    Cors: {
+      host: 'http://localhost',
+      port: 80,
+      get asURL() {return this.host + ':' + this.port}
+    },
+    DB: {
+      name: 'db.deepcosmos'
+    }
   }
 }

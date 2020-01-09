@@ -2,7 +2,7 @@
 
 const sqlite = require('sqlite3').verbose();
 const path = require('path');
-const DATABASE = require('../Config').DB.name;
+const DATABASE = require('../Config').dev.DB.name;
 const CREATE_TABLE_STM =
 `
 CREATE TABLE USER(
