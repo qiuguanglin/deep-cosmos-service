@@ -22,8 +22,7 @@ module.exports = {
     },
     Cors: {
       host: 'http://49.235.159.64',
-      port: 80,
-      get asURL() {return this.host + ':' + this.port}
+      get asURL() {return this.host}
     },
     DB: {
       name: 'db.deepcosmos'
