@@ -1,62 +1,62 @@
 [
   {
     "id": "001",
-    "name": "earth",
+    "name": "Earth",
     "cname": "地球"
   },
   {
     "id": "002",
-    "name": "moon",
+    "name": "Moon",
     "cname": "月球"
   },
   {
     "id": "003",
-    "name": "venus",
+    "name": "Venus",
     "cname": "金星"
   },
   {
     "id": "004",
-    "name": "mercury",
+    "name": "Mercury",
     "cname": "水星"
   },
   {
     "id": "005",
-    "name": "mars",
+    "name": "Mars",
     "cname": "火星"
   },
   {
     "id": "006",
-    "name": "jupiter",
+    "name": "Jupiter",
     "cname": "木星"
   },
   {
     "id": "007",
-    "name": "saturn",
+    "name": "Saturn",
     "cname": "土星"
   },
   {
     "id": "008",
-    "name": "uranus",
+    "name": "Uranus",
     "cname": "天王星"
   },
   {
     "id": "009",
-    "name": "neptune",
+    "name": "Neptune",
     "cname": "海王星"
   },
   {
     "id": "010",
-    "name": "pluto",
+    "name": "Pluto",
     "cname": "冥王星"
   },
   {
     "id": "011",
-    "name": "mimas",
+    "name": "Mimas",
     "cname": "土卫一"
   },
   {
     "id": "012",
-    "name": "titan",
+    "name": "Titan",
     "cname": "土卫六（泰坦）"
   }
 ]
