@@ -3,36 +3,48 @@
     "id": 1,
     "title": "【火星5天4夜情侣游】",
     "detail": "攀登火星最高峰奥林匹斯山，黄昏浪漫看日落，早上温馨看地出，来回飞船价钱包含",
-    "price": 888898988
+    "price": 888898988,
+    "en-title": "[Romantic On Mars]",
+    "en-detail": "Hiking on Olympics Mt see the sunset & earth-rise, round trip tickets included."
   },
   {
     "id": 2,
     "title": "【土星温泉酒店】",
     "detail": "豪华双人房，天窗广角120度瞭望太空，自助早餐和私人温泉池，另加间歇泉景观门票免费派",
-    "price": 5168898988
+    "price": 5168898988,
+    "en-title": "[Hot Spring Hotel On Saturn]",
+    "en-detail": "Fancy double room with opening ceiling, buffet meal&SPAR, Geyser garden entry free."
   },
   {
     "id": 3,
     "title": "【土卫六（泰坦星）三天两夜学术游】",
     "detail": "零距离接触惠更斯号着陆点，让您了解当年探测器软着陆的整个过程",
-    "price": 3160000000
+    "price": 3160000000,
+    "en-title": "[Geeks' Day-out On Titan]",
+    "en-detail": "Huygens landing point visiting, it's more than just a hole!"
   },
   {
     "id": 4,
     "title": "【天王星蓝色一天游】",
     "detail": "自由自在地翱翔在广袤的甲烷海洋上空，或者潜入深海探究古代生物，潜水费用包含",
-    "price": 6660008890
+    "price": 6660008890,
+    "en-title": "[Into the Blue World On Uranus]",
+    "en-detail": "Ocean diving and soaring above the Methane Gas."
   },
   {
     "id": 5,
     "title": "【与旅行者一号亲密接触】",
     "detail": "无限接近上世纪美国发射的探测卫星Voyager-1，您可以亲眼目睹它饱经风霜的真容",
-    "price": 9888888888
+    "price": 9888888888,
+    "en-title": "[Voyager1 Is Next To You]",
+    "en-detail": "Get close to see he Human-Made ever farthest object in the Universe!"
   },
   {
     "id": 6,
     "title": "【冥王星西部探险】",
     "detail": "两天一夜造访神秘的冥王星，这里曾是流放者之地，这里是荒凉的世界，这里也是冒险家的乐园",
-    "price": 4688888888
+    "price": 4688888888,
+    "en-title": "[Wild West To Pluto]",
+    "en-detail": "2 days exploring Pluto like a cowboy, ARE YOU READY?"
   }
 ]
