@@ -3,7 +3,7 @@
 module.exports = {
   dev: {
     Redis: {
-      host: '49.235.159.64',
+      host: '120.77.17.197',
       port: 6379
     },
     Cors: {
@@ -21,7 +21,7 @@ module.exports = {
       port: 6379
     },
     Cors: {
-      host: 'http://49.235.159.64',
+      host: 'http://120.77.17.197',
       get asURL() {return this.host}
     },
     DB: {
