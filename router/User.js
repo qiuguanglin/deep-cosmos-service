@@ -9,7 +9,7 @@ router.get('/allUsers', (req, res) => {
 });
 
 router.post('/newUser', (req, res) => {
-  //first chceck session
+  //first check session
   const {user_sid} = req.cookies;
   if(user_sid && req.session.user){
     const sessionUser = req.session.user;
