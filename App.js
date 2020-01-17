@@ -18,6 +18,8 @@ const DataRouter = require('./router/Data');
 RedisClient.on('connect', ()=>console.log('redis connected'));
 RedisClient.on('error', err=> console.log('redis connected error', err));
 
+const csurfMidlleware = csurf();
+
 const CORS_OPT = {
   origin: Config.Cors.asURL,
   maxAge: 1200,
@@ -45,8 +47,7 @@ App
   .use(cors(CORS_OPT))
   .use(cookieParser())
   .use(session(SESSION_OPT))
-  .use(csurf())
-  .get('/csrf', (req, res) => res.send({success: true, csrfToken: req.csrfToken()}))
+  .get('/csrf', csurfMidlleware, (req, res) => res.send({success: true, csrfToken: req.csrfToken()}))
   .use('/user', UserRouter)
   .use('/promotion', PromotionRouter)
   .use('/search', SearchRouter)
