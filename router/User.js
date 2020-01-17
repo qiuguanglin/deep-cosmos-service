@@ -4,10 +4,6 @@ const md5 = require('md5');
 const router = require('express').Router();
 const {FindUser, NewUser, AllUsers} = require('../repo/UserRepo');
 
-router.get('/allUsers', (req, res) => {
-  AllUsers((err, rows)=>res.send({success: true, message: rows}));
-});
-
 router.post('/newUser', (req, res) => {
   //first check session
   const {user_sid} = req.cookies;
@@ -45,7 +41,7 @@ router.get('/amIin', (req, res) => {
   res.send({success: !!user, message: user});
 });
 
-router.delete('/signout', (req, res) => {
+router.get('/signout', (req, res) => {
   if(req.session.user){
     res.clearCookie('user_sid');
     res.send({success: true});
