@@ -5,7 +5,7 @@ const fs = require('fs');
 const path = require('path');
 
 module.exports = env => {
-  if(env === 'prod') {
+  if(env === 'prd') {
     const stream = fs.createWriteStream(path.join(__dirname, '../deepcosmos-access.log'), { flags: 'a' });
     return morgan('common', {stream});
   }
