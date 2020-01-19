@@ -46,8 +46,9 @@ router.get('/signout', (req, res) => {
   if(req.session.user){
     Logger.info('user signed out %s', req.session.user.username);
     res.clearCookie('user_sid');
-    res.send({success: true});
+    return res.send({success: true});
   }
+  res.send({message: false});
 });
 
 module.exports = router;

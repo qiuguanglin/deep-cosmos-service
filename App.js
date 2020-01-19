@@ -40,8 +40,10 @@ const SESSION_OPT = {
   }
 }
 
+const csurfMiddleware = csurf({cookie: {httpOnly: true}});
 const {port} = Config.App;
 const App = express();
+
 App
   .use(MorganMiddleware)
   .use(bodyParser.json())
@@ -53,8 +55,7 @@ App
   .use('/promotion', PromotionRouter)
   .use('/search', SearchRouter)
   .use('/data', DataRouter)
-  .use(csurf({cookie: {httpOnly: true}}))
-  .use('/user', UserRouter)
-  .get('/csrf', CsrfMiddleware)
+  .use('/user', csurfMiddleware, UserRouter)
+  .get('/csrf', csurfMiddleware, CsrfMiddleware)
   .use(CsrfErrHandlerMiddleware)
   .listen(port, () => Logger.info(`server started at ${port}`));
