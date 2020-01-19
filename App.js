@@ -1,13 +1,13 @@
 'use strict';
 
 const express = require('express');
-const morgan = require('morgan');
 const bodyParser = require('body-parser');
 const cors = require('cors');
 const cookieParser = require('cookie-parser');
 const session = require('express-session');
 const csurf = require('csurf');
-const Config = require('./Config')[process.argv[2]];
+const ENV = process.argv[2];
+const Config = require('./Config')[ENV];
 const RedisClient = require('redis').createClient(Config.Redis);
 const RedisStore = require('connect-redis')(session);
 const UserRouter = require('./router/User');
@@ -15,9 +15,11 @@ const PromotionRouter = require('./router/Promotion');
 const SearchRouter = require('./router/Search');
 const DataRouter = require('./router/Data');
 const {CsrfMiddleware, CsrfErrHandlerMiddleware} = require('./middleware/Csrf');
+const MorganMiddleware = require('./middleware/MorganMiddleware')(ENV);
+const Logger = require('./Logger')('App');
 
-RedisClient.on('connect', ()=>console.log('redis connected'));
-RedisClient.on('error', err=> console.log('redis connected error', err));
+RedisClient.on('connect', () => Logger.info('redis connected'));
+RedisClient.on('error', err=> Logger.warn('redis connected error address %s port %s', err.address, err.port));
 
 const CORS_OPT = {
   origin: Config.Cors.asURL,
@@ -38,9 +40,10 @@ const SESSION_OPT = {
   }
 }
 
+const {port} = Config.App;
 const App = express();
 App
-  .use(morgan('common'))
+  .use(MorganMiddleware)
   .use(bodyParser.json())
   .use(bodyParser.urlencoded({extended: false}))
   .use(cors(CORS_OPT))
@@ -54,4 +57,4 @@ App
   .use('/user', UserRouter)
   .get('/csrf', CsrfMiddleware)
   .use(CsrfErrHandlerMiddleware)
-  .listen(60000, console.log('server stated'));
+  .listen(port, () => Logger.info(`server started at ${port}`));

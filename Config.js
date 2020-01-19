@@ -2,6 +2,9 @@
 
 module.exports = {
   dev: {
+    App: {
+      port: 60000
+    },
     Redis: {
       host: '120.77.17.197',
       port: 6379
@@ -16,6 +19,9 @@ module.exports = {
     }
   },
   prd: {
+    App: {
+      port: 60000
+    },
     Redis: {
       host: 'localhost',
       port: 6379
