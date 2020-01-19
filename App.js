@@ -14,11 +14,10 @@ const UserRouter = require('./router/User');
 const PromotionRouter = require('./router/Promotion');
 const SearchRouter = require('./router/Search');
 const DataRouter = require('./router/Data');
+const {CsrfMiddleware, CsrfErrHandlerMiddleware} = require('./middleware/Csrf');
 
 RedisClient.on('connect', ()=>console.log('redis connected'));
 RedisClient.on('error', err=> console.log('redis connected error', err));
-
-const csurfMidlleware = csurf();
 
 const CORS_OPT = {
   origin: Config.Cors.asURL,
@@ -47,9 +46,12 @@ App
   .use(cors(CORS_OPT))
   .use(cookieParser())
   .use(session(SESSION_OPT))
-  .get('/csrf', csurfMidlleware, (req, res) => res.send({success: true, csrfToken: req.csrfToken()}))
-  .use('/user', UserRouter)
+  .get('/user/amIin', require('./middleware/AmIin'))
   .use('/promotion', PromotionRouter)
   .use('/search', SearchRouter)
   .use('/data', DataRouter)
+  .use(csurf({cookie: {httpOnly: true}}))
+  .use('/user', UserRouter)
+  .get('/csrf', CsrfMiddleware)
+  .use(CsrfErrHandlerMiddleware)
   .listen(60000, console.log('server stated'));

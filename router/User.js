@@ -36,11 +36,6 @@ router.post('/login', (req, res) => {
     });
 });
 
-router.get('/amIin', (req, res) => {
-  const user = req.session.user;
-  res.send({success: !!user, message: user});
-});
-
 router.get('/signout', (req, res) => {
   if(req.session.user){
     res.clearCookie('user_sid');
