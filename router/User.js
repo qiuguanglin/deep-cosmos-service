@@ -51,4 +51,9 @@ router.get('/signout', (req, res) => {
   res.send({message: false});
 });
 
+router.post('/restricted', (req, res) => {
+  console.log('restricted endpoint accessed');
+  res.send('I got triggered');
+});
+
 module.exports = router;
