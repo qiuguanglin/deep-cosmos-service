@@ -2,7 +2,7 @@
 
 const md5 = require('md5');
 const router = require('express').Router();
-const {FindUser, NewUser, AllUsers} = require('../repo/UserRepo');
+const {FindUser, NewUser} = require('../repo/UserRepo');
 const Logger = require('../Logger')('UserService')
 
 router.post('/newUser', (req, res) => {

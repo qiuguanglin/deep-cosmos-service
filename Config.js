@@ -1,6 +1,10 @@
 'use strict';
 
 module.exports = {
+  oauth: {
+    clientID: '272b679df0ac55f5ade8',
+    clientSecret: 'f3ee1f979a6448d7d82131e1ad62ec612fa0ed37'
+  },
   dev: {
     App: {
       port: 60000

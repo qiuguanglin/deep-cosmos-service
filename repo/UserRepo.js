@@ -13,18 +13,11 @@ const NewUser = ({username, pass, nickname}, callback) => {
   });
 }
 
-const AllUsers = callback => {
-  Repo.all(SELECT_ALL, [], (err, rows) => {
-    if(err)callback(err);
-    callback(null, rows);
-  });
-}
-
 const FindUser = (username, callback) => {
     Repo.get(SELECT, [username], (err, row) => {
-    if(err)callback(err);
+    if(err)return callback(err);
     callback(null, row);
   });
 }
 
-module.exports = {NewUser, AllUsers, FindUser};
+module.exports = {NewUser, FindUser};
