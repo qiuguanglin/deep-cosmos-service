@@ -1,10 +1,6 @@
 'use strict';
 
 module.exports = {
-  oauth: {
-    clientID: '272b679df0ac55f5ade8',
-    clientSecret: 'f3ee1f979a6448d7d82131e1ad62ec612fa0ed37'
-  },
   dev: {
     App: {
       port: 60000
@@ -20,6 +16,12 @@ module.exports = {
     },
     DB: {
       name: 'db.deepcosmos'
+    },
+    oauth: {
+      github: {
+        clientID: '272b679df0ac55f5ade8',
+        clientSecret: 'f3ee1f979a6448d7d82131e1ad62ec612fa0ed37'
+      }
     }
   },
   prd: {
@@ -36,6 +38,12 @@ module.exports = {
     },
     DB: {
       name: 'db.deepcosmos'
+    },
+    oauth: {
+      github: {
+        clientID: '159744c17f40fafd3023',
+        clientSecret: '66ebc88a31e50006fd84322ee7fb1fffd5c5e55a'
+      }
     }
   }
 }

@@ -11,7 +11,7 @@ const Config = require('./Config')[ENV];
 const RedisClient = require('redis').createClient(Config.Redis);
 const RedisStore = require('connect-redis')(session);
 const UserRouter = require('./router/User');
-const OAuthRouter = require('./router/OAuth');
+const OAuthGithubRouter = require('./router/OAuthGithub')(Config);
 const PromotionRouter = require('./router/Promotion');
 const SearchRouter = require('./router/Search');
 const DataRouter = require('./router/Data');
@@ -56,7 +56,7 @@ App
   .use('/promotion', PromotionRouter)
   .use('/search', SearchRouter)
   .use('/data', DataRouter)
-  .use('/user', OAuthRouter)
+  .use('/user', OAuthGithubRouter)
   .use('/user', csurfMiddleware, UserRouter)
   .get('/csrf', csurfMiddleware, CsrfMiddleware)
   .use(CsrfErrHandlerMiddleware)
